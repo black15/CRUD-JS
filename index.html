@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Cruds JavaScript</title>
+</head>
+<body>
+
+	<div class="content">
+		<h1> JS CRUDS PROJECT </h1>
+
+		<div class="inputs">
+			<input type="text" id="title" placeholder="Title">
+			<div class="price">
+				<input type="number" id="price" placeholder="price" onkeyup="getTotalPrice()">
+				<input type="number" id="taxes" placeholder="taxes" onkeyup="getTotalPrice()">
+				<input type="number" id="ads" placeholder="ads" onkeyup="getTotalPrice()">
+				<input type="number" id="discount" placeholder="discount" onkeyup="getTotalPrice()">
+				<strong id='total'></strong>
+			</div>
+			<input type="number" id="count" placeholder="count">
+			<input type="text" id="category" placeholder="category">
+			<div class="btns">
+				<button id="create">Create</button>
+				<button id="clear">Clear</button>
+			</div>
+		</div>
+
+		<div class="outputs">
+			<input type="text" id="search" placeholder="Search">
+			<div class="search_filter">
+				<button id="sbt">Search by title</button>
+				<button id="sbc">Search by category</button>
+			</div>
+			<div id="deleteAll"></div>
+		</div>
+
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>TITLE</th>
+				<th>PRICE</th>
+				<th>TAXES</th>
+				<th>ADS</th>
+				<th>DISCOUNT</th>
+				<th>TOTAL</th>
+				<th>CATEGORY</th>
+				<th>UPDATE</th>
+				<th>DELETE</th>
+			</tr>
+			<tbody id="table-body">
+				
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
